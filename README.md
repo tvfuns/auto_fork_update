@@ -32,8 +32,11 @@ fork自动更新
 name: Sync Fork
 
 on:
+
   schedule:
+  
     - cron: '*/30 * * * *' # every 30 minutes
+    
   workflow_dispatch: # 有这个才能手动点运行
 
 jobs:

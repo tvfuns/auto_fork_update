@@ -1,5 +1,5 @@
 # auto_fork_update
-fork自动更新
+# fork仓库自动更新
 
 两种方法
 1、apps pull
@@ -10,7 +10,7 @@ fork自动更新
 3、方法2的同步时间可以自行调节
 
 
-1、apps pull
+## 1、apps pull
 访问地址：https://github.com/apps/pull
 
 ![image](https://github.com/tvfuns/auto_fork_update/assets/5485787/54561853-9f9a-4296-b225-a294c70c8aa8)
@@ -23,12 +23,12 @@ fork自动更新
 上游仓库改变，过了几个小时后，自动同步成功
 
 -------------------------------------------------------------------------------------------------------
-2、action
+## 2、action
 
 先要检查自己的待同步仓库设置
 ![image](https://github.com/tvfuns/auto_fork_update/assets/5485787/d994e594-0478-4b76-9484-81ce86d595c4)
 
-
+```
 name: Sync Fork
 
 on:
@@ -52,4 +52,4 @@ jobs:
           repo: dr_py    #上游仓库名
           base: main    #上游分支名
           head: main    #本仓库分支名
-
+```
